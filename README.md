@@ -177,13 +177,15 @@ Subscripts `I`, `R`, and `P` represent `image-level`, `region-level`, and `pixel
 | [InvAD-lite](https://zhangzjn.github.io/projects/InvAD) |        87.2 |	85.1 |	77.8 |	98.1 |	31.6 |	37.9 |	91.6 |	17.6 |	36.8 |	10.3 |	23.7 |	83.3 |	53.7 |	21.6 |               	72.7                | [log](https://drive.google.com/file/d/1ftzREsAY7iZwDsqQVfDbL_4Yq7DEa4Bn/view?usp=sharing) & [weight](https://drive.google.com/file/d/1G0Wsnai0gbQZPX6lk-dSJ8WXu8nNCCuH/view?usp=sharing) |
 
 ### 使用时候遇到的问题
-1. ![image](https://github.com/user-attachments/assets/3b15178b-a3d3-437a-b10d-4a0c851f7b32)
+1.环境安装问题  
+![image](https://github.com/user-attachments/assets/3b15178b-a3d3-437a-b10d-4a0c851f7b32)  
 ```python
 pip install numpy-hilbert-curve==1.0.1 pyzorder==0.0.1 scikit-learn tensorboard
 ```
 
-2. 开始训练 ```python CUDA_VISIBLE_DEVICES=0 python run.py -c configs/invad/invad_mvtec.py -m train ```
-
-```
+2. 开始训练  
+```python
+CUDA_VISIBLE_DEVICES=0 python run.py -c configs/invad/invad_mvtec.py -m train
+```  
 
 
