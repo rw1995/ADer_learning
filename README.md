@@ -176,43 +176,14 @@ Subscripts `I`, `R`, and `P` represent `image-level`, `region-level`, and `pixel
 |   [InvAD](https://zhangzjn.github.io/projects/InvAD)    |        89.0 |	86.4 |	79.6 |	98.4 |	30.7 |	37.6 |	91.9 |	17.7 |	36.1 |	10.4 |	23.5 |	85.0 |	53.4 |	21.4 |               	73.4                | [log](https://drive.google.com/file/d/1lquuvY4MbGm5ZJrzdF0iZGzOkG89GEpS/view?usp=sharing) & [weight](https://drive.google.com/file/d/1B62_FZOvcdpjb0o3AOlcXb6cGrSWk0vt/view?usp=sharing) |
 | [InvAD-lite](https://zhangzjn.github.io/projects/InvAD) |        87.2 |	85.1 |	77.8 |	98.1 |	31.6 |	37.9 |	91.6 |	17.6 |	36.8 |	10.3 |	23.7 |	83.3 |	53.7 |	21.6 |               	72.7                | [log](https://drive.google.com/file/d/1ftzREsAY7iZwDsqQVfDbL_4Yq7DEa4Bn/view?usp=sharing) & [weight](https://drive.google.com/file/d/1G0Wsnai0gbQZPX6lk-dSJ8WXu8nNCCuH/view?usp=sharing) |
 
+### 使用时候遇到的问题
+1. ![image](https://github.com/user-attachments/assets/3b15178b-a3d3-437a-b10d-4a0c851f7b32)
+```python
+pip install numpy-hilbert-curve==1.0.1 pyzorder==0.0.1 scikit-learn tensorboard
+```
 
-
-## Citation
-If you use this toolbox or benchmark in your research, please cite our related works.
-```angular2html
-@article{ader,
-  title={ADer: A Comprehensive Benchmark for Multi-class Visual Anomaly Detection},
-  author={Jiangning Zhang and Haoyang He and Zhenye Gan and Qingdong He and Yuxuan Cai and Zhucun Xue and Yabiao Wang and Chengjie Wang and Lei Xie and Yong Liu},
-  journal={arXiv preprint arXiv:2406.03262},
-  year={2024}
-}
-
-@inproceedings{realiad,
-  title={Real-IAD: A Real-World Multi-View Dataset for Benchmarking Versatile Industrial Anomaly Detection},
-  author={Wang, Chengjie and Zhu, Wenbing and Gao, Bin-Bin and Gan, Zhenye and Zhang, Jianning and Gu, Zhihao and Qian, Shuguang and Chen, Mingang and Ma, Lizhuang},
-  booktitle={CVPR},
-  year={2024}
-}
-
-@article{vitad,
-  title={Exploring Plain ViT Reconstruction for Multi-class Unsupervised Anomaly Detection},
-  author={Zhang, Jiangning and Chen, Xuhai and Wang, Yabiao and Wang, Chengjie and Liu, Yong and Li, Xiangtai and Yang, Ming-Hsuan and Tao, Dacheng},
-  journal={arXiv preprint arXiv:2312.07495},
-  year={2023}
-}
-
-@article{invad,
-  title={Learning Feature Inversion for Multi-class Anomaly Detection under General-purpose COCO-AD Benchmark},
-  author={Jiangning Zhang and Chengjie Wang and Xiangtai Li and Guanzhong Tian and Zhucun Xue and Yong Liu and Guansong Pang and Dacheng Tao},
-  journal={arXiv preprint arXiv:2404.10760},
-  year={2024}
-}
-
-@article{mambaad,
-  title={MambaAD: Exploring State Space Models for Multi-class Unsupervised Anomaly Detection},
-  author={He, Haoyang and Bai, Yuhu and Zhang, Jiangning and He, Qingdong and Chen, Hongxu and Gan, Zhenye and Wang, Chengjie and Li, Xiangtai and Tian, Guanzhong and Xie, Lei},
-  year={2024}
-}
+2. 开始训练 ```python CUDA_VISIBLE_DEVICES=0 python run.py -c configs/invad/invad_mvtec.py -m train ```
 
 ```
+
+
